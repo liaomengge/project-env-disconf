@@ -16,8 +16,8 @@ export WAR_ROOT_PATH
 将配置文件移到上面配置好了的[ONLINE_CONFIG_PATH]目录下
 配置文件包括:
 - jdbc-mysql.properties (数据库配置)
-- redis-config.properties (Redis配置)
-- zoo.properties (Zookeeper配置)
+- redis-config.properties (redis配置)
+- zoo.properties (zookeeper配置)
 - application.properties (应用配置）
 注意:记得执行将application-demo.properties重命名成application.properties, 并将这些配置修改成自己本地的配置
 
@@ -125,3 +125,6 @@ role_resource
     method_mask     GET, PUT, POST, DELETE, 1: accessible
     update_time     更新时间            
 上面是一些表的说明,可以在env表中添加自定义的环境.
+
+参考: 
+https://github.com/knightliao/disconf/tree/master/disconf-web
